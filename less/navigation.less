@@ -1,1 +1,31 @@
-// Navigation code here
+.site-nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: @nav-bg;
+    color: @nav-font;
+    .flex();
+
+    nav {
+        max-width: 800px;
+        border-bottom: 2px inset @nav-border;
+        .flex(@flow: column);
+
+        h1 {
+            font-size: 4.0rem;
+            margin: 1.2rem 0;
+        }
+
+        div {
+            width: 375px;
+            margin: .9rem 0;
+            .flex(@main-axis: space-between);
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

@@ -1,1 +1,7 @@
-// Mixins Here
+.flex (@main-axis: center; @cross-axis: center; @flow: row; @wrap: wrap;) {
+  display: flex;
+  flex-flow: @flow @wrap;
+  justify-content: @main-axis;
+  align-content: @cross-axis;
+  align-items: @cross-axis;
+}
