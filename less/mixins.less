@@ -5,3 +5,31 @@
   align-content: @cross-axis;
   align-items: @cross-axis;
 }
+.home-p () {
+    font-size: 1.6rem;
+    color: @main-font-color;
+}
+.sign-up (@bg: black; @text: white) {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: .8rem 2rem;
+  border-radius: .5rem;
+  background-color: @bg;
+  color: @text;
+  transition:
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
+
+  &:hover {
+    background-color: @text;
+    color: @bg;
+  }
+
+  @media @phone {
+    display: block;
+    line-height: 5rem;
+    padding: 0 auto;
+    text-align: center;
+    padding: .8rem auto;
+  }
+}
