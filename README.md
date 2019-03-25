@@ -32,15 +32,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
+---
+
 1. What is the difference between an adaptive website and a fully responsive website?
+
+- An Adaptive website uses set breakpoints to design for specific use cases. For example, a company using this method may build one version of their portal designed for phones at `width: 500px;` one for tablets at `width: 800px;` and one for desktops at `width: 1200px;`. Each one of these would be build separately from the others and would not be able to respond to horizontal changes in viewport dimensions. Instead they are build to the requirement. In contrast, a responsive website uses this idea of viewport breakpoints as more of a guidepost rather than a hardset rule. A responsive build mixes the best of fixed, fluid, and adaptive layouts to create builds that can fit themselves into just about any viewport but switching certain preestablished styles (widths, margins, row or column flow, etc.) when a new breakpoint is detected.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+- Desktop first projects are built with the larger viewports in mind. They are then adapted to smaller viewports (usually with a `@media (max-width: ???px)` query) and changed as needed to have a design that is suitable to the smaller size. Mobile first projects are built from the smallest expected viewport. They are then changed to suit the larger breakpoints, at times adding in extra content that may have been hidden in smaller breakpoints. Usually mobile first projects will use `@media (min-width: ???px)` as the guide for their styles.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+- Doing that would switch the rem units to a base-10 equivalent for px measurements. (e.g, `1.6rem === 16px`)
 
 4. How would you describe preprocessing to someone new to CSS?
 
+- Preprocessing is nice way to give yourself shortcuts or more human-readable versions of what you would already write in css. Using a preprocessor allows you to streamline what you would already be writing by using preset variables, mixins (small premade rulesets which can be given variables to customize), and logic. The preprocessor then expands the version you write into full css for you lessening the workload.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+- I can't say that I have a single favorite concept in preprocessing, but for this question I would have to give a three way tie between variables and mixins and maps. The way that these can be used opens up so many possibilities for creating stylesets and really makes room for creativity while lessening the difficulty in implementation. The most trouble that I have had is just forgetting to check for error messages in the terminal when something isn't working as expected. Usually things won't work because of a break in syntax, or something similar, that stops the preprocessor before it can finish compiling. I need to get into the habit of checking immediately if/when something seems broken to see if there is actually an error being put forth by the compiler.
+
+---
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
